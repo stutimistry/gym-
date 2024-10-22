@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymso Fitness</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .full-screen-image {
+            background-image: url('gym.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+        .content h1 {
+            font-size: 50px;
+            margin: 10px 0;
+        }
+        .content p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .content .buttons {
+            margin-top: 20px;
+        }
+        .content .buttons a {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .content .buttons a:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="#">Gymso Fitness</a>
+        </div>
+        <div class="nav-center">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CLASSES</a>
+            <a href="#">SCHEDULES</a>
+            <a href="#">CONTACT</a>
+        </div>
+        <div class="nav-right">
+            <a href="#"><i class="fab fa-facebook"><img src="faacebook.png"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="full-screen-image">
+        <div class="content">
+            <p>new way to build a healthy lifestyle!</p>
+            <h1>UPGRADE YOUR BODY AT <br> GYMSO FITNESS</h1>
+            <div class="buttons">
+                <a href="#">GET STARTED</a>
+                <a href="#">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
